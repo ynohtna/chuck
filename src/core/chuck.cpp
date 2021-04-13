@@ -38,6 +38,7 @@
 #include "chuck_errmsg.h"
 #include "chuck_io.h"
 #include "chuck_otf.h"
+#include "chuck_version.h"
 #include "ulib_machine.h"
 #include "util_network.h"
 #include "util_string.h"
@@ -80,7 +81,7 @@
 
 
 // chuck statics
-const char ChucK::VERSION[] = "1.4.0.1 (numchucks)";
+const char ChucK::VERSION[] = CHUCK_BUILD_VERSION;
 t_CKUINT ChucK::o_numVMs = 0;
 t_CKBOOL ChucK::o_isGlobalInit = FALSE;
 t_CKBOOL ChucK::enableSystemCall = FALSE;
